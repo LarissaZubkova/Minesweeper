@@ -1,0 +1,6 @@
+const HEIGHT = 16;
+const WIDTH =  16;
+const BOMB_COUNT = 40;
+const TIMER_CLASS_DEFAULT = 'number-0';
+
+export {HEIGHT, WIDTH, BOMB_COUNT, TIMER_CLASS_DEFAULT}

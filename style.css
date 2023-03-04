@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 310px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c2c2c2a9;
+    padding: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-left-color: white;
+    border-top-color: white;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-menu {
+    background: #c0c0c0;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: #7b7b7b;
+    border-top-color: #7b7b7b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    width: 290px;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+}
+
+li {
+   list-style: none;
+   width: 14px;
+   height: 24px;
+   margin: -1px;
+}
+
+.start-btn {
+    border: 1px solid #7b7b7b;
+    padding: 3px;
+    width: 19px;
+    height: 19px;
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -1px -25px;
+}
+
+.start-btn.start {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -28px -25px;
+}
+
+.start-btn.amaze {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -55px -25px;
+}
+
+.start-btn.loose {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -109px -25px;
+}
+
+.start-btn.win {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -82px -25px;
+}
+
+main {
+    margin-top: 8px;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: #7b7b7b;
+    border-top-color: #7b7b7b;
+    display: flex;
+}
+
+.cell {
+    height: 17px;
+    width: 17px;
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -50px;
+    border: 1px solid rgb(104, 104, 104);
+}
+
+.cell:active {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -100px;
+}
+
+.cell.loose {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -50px;
+}
+
+.cell.bomb-loose {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -121px -50px;
+}
+
+.cell.bomb {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -102px -51px;
+}
+
+.cell.bomb-first {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -86px -51px;
+}
+
+.cell.count-0 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -100px;
+}
+
+.cell.count-1 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -68px;
+}
+
+.cell.count-2 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -17px -68px;
+}
+
+.cell.count-3 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -34px -68px;
+}
+
+.cell.count-4 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -51px -68px;
+}
+
+.cell.count-5 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -69px -68px;
+}
+
+.cell.count-6 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -86px -68px;
+}
+
+.cell.count-7 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -102px -68px;
+}
+
+.cell.count-8 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -119px -68px;
+}
+
+.cell.flag {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -34px -50px;
+}
+
+.cell.question {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -50px -50px;
+}
+
+.cell.question-close {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -70px -51px;
+}
+
+li.number-0 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -125px 0;
+}
+
+li.number-1 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 0;
+}
+
+li.number-2 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -13px 0;
+}
+
+li.number-3 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -28px 0;
+}
+
+li.number-4 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -41px 0;
+}
+
+li.number-5 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -55px 0;
+}
+
+li.number-6 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -69px 0;
+}
+
+li.number-7 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -84px 0;
+}
+
+li.number-8 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -97px 0;
+}
+
+li.number-9 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -111px 0;
+}
