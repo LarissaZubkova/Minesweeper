@@ -114,7 +114,7 @@ main {
 
 .cell.bomb-loose {
     background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
-    background-position: -121px -50px;
+    background-position: -120px -51px;
 }
 
 .cell.bomb {
